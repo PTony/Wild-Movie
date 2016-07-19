@@ -59,3 +59,19 @@
 	background-color:#04B45F;
 	padding:20px;
 }
+
+/* == == == == == == == == */
+/* Article */ 
+.titre-article {
+	margin: 0px 0 20px;
+}
+
+.titre-article > h2 {
+	font-weight: 900;
+}
+
+.texte-article {
+	padding-top: 30px;
+	font-size: 25px;
+	line-height: 1.6em;
+}

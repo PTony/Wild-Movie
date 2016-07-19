@@ -1,10 +1,52 @@
 {% extends '::base.html.twig' %}
 
 {% block body %}
-
-	<h2> Télécharge cette maquette et intégre ta page ici-même.
-	Le contenu est bien entendu fictif. Ne rentre pas un article en BDD, nous te demandons juste d'intégrer la page. (Le header et le footer sont déjà présent !!!)</h2>
-
-	<img src="{{ asset('img/image.png') }}">
-
+<div class="col-md-10 col-md-offset-1">
+	<div class="col-md-12">
+		<div class="titre-article">
+			<h2>Titre de l'article</h2>
+		</div>
+	</div>
+	<div class="col-md-8 contenu-article">
+		<div class="image-article thumbnail">
+			<img src="http://fakeimg.pl/800x600/"/>
+		</div>
+		<div class="texte-article">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere ipsum id diam aliquam, pulvinar pretium neque tristique. Curabitur sollicitudin quam eu metus sollicitudin, ac placerat ipsum aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et pulvinar dui. Donec volutpat vel dui in posuere. Mauris in tristique nunc. Nulla condimentum tellus sed malesuada commodo. Etiam elit urna, condimentum a nibh sit amet, dapibus accumsan libero. In porttitor dapibus urna eu scelerisque. Sed ut porttitor nisi.
+			</p>
+			<p>
+				Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus feugiat leo vitae mi porttitor, nec laoreet leo interdum. Praesent eleifend eget magna eu fermentum. Nunc libero ante, sagittis ut feugiat ut, ullamcorper sed elit. Ut congue augue ac enim fermentum tincidunt. Morbi mi purus, imperdiet at consectetur eget, ultrices in enim. Praesent euismod vulputate purus, ut feugiat ex porta at. Etiam ac neque eget arcu ultricies facilisis ac at enim. Etiam quis est at mi scelerisque luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu rutrum arcu. Sed in tellus vel mi viverra sodales. 
+			</p>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div>
+			<div class="thumbnail">
+				<img src="http://fakeimg.pl/400x300/">
+				<div class="caption">
+					<h3>Autre Article</h3>
+				</div>
+			</div>
+			<div class="thumbnail">
+				<img src="http://fakeimg.pl/400x300/">
+				<div class="caption">
+					<h3>Autre Article</h3>
+				</div>
+			</div>
+			<div class="thumbnail">
+				<img src="http://fakeimg.pl/400x300/">
+				<div class="caption">
+					<h3>Autre Article</h3>
+				</div>
+			</div>
+			<div class="thumbnail">
+				<img src="http://fakeimg.pl/400x300/">
+				<div class="caption">
+					<h3>Autre Article</h3>
+				</div>
+			</div>
+		</div>
+	</div>		
+</div>
 {% endblock %}

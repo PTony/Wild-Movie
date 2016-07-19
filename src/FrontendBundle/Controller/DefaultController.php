@@ -8,7 +8,18 @@ use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
-	public function newFilmAction(Request $request)
+
+    public function newCommentAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $user = $this->container->get('security.context')->getToken()->getUser();
+        // $thisMovie = $em->getRepository('FrontendBundle:Film')->findOneById($id);
+  
+        return $this->render('FrontendBundle:Default:newcomment.html.twig', array(
+        ));
+    }
+
+    public function newFilmAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
         $user = $this->container->get('security.context')->getToken()->getUser();
